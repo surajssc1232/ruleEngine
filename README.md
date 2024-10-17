@@ -26,6 +26,8 @@ This Rule Engine Application is a Spring Boot-based system that allows users to 
 
 5. Open a web browser and go to `http://localhost:8080` to access the application.
 
+# Backend
+
 ## Usage
 
 The application provides a simple web interface with three main functions:
@@ -102,10 +104,37 @@ The application provides a simple web interface with three main functions:
 
 For detailed API documentation, please refer to the API documentation section (if available).
 
+# Frontend
+
+## Using the Application
+
+After starting the application, you can access the web interface by following these steps:
+
+1. Open a web browser and navigate to `http://localhost:8080`.
+
+2. You will see the Rule Engine Interface with three main sections:
+
+   a. Create Rule:
+      - Enter a rule name in the "Rule Name" field.
+      - Enter the rule expression in the "Rule Expression" field.
+      - Click the "Create Rule" button to create a new rule.
+
+   b. Evaluate Rule:
+      - Enter the rule ID in the "Rule ID" field.
+      - Enter the evaluation data as a JSON object in the "Evaluation Data" field.
+      - Click the "Evaluate Rule" button to evaluate the rule.
+
+   c. Combine Rules:
+      - Enter comma-separated rule IDs in the "Rule IDs" field.
+      - Click the "Combine Rules" button to combine the specified rules.
+
+3. The results of your actions will be displayed in the "Result" section at the bottom of the page.
+
+Note: Ensure that the backend server is running on `http://localhost:8080` for the web interface to function correctly.
+
+
 ## Contributing
 
 Contributions to the Rule Engine Application are welcome. Please feel free to submit pull requests or create issues for bugs and feature requests.
 
-## License
 
-[Specify your license here]
