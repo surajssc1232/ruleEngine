@@ -102,7 +102,7 @@ The application provides a simple web interface with three main functions:
 - Evaluate Rule: POST `/api/rules/{ruleId}/evaluate`
 - Combine Rules: POST `/api/rules/combine`
 
-For detailed API documentation, please refer to the API documentation section (if available).
+
 
 # Frontend
 
