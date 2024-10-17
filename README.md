@@ -130,6 +130,35 @@ After starting the application, you can access the web interface by following th
 
 3. The results of your actions will be displayed in the "Result" section at the bottom of the page.
 
+### Example: Creating a Complex Rule
+
+Let's create a complex rule that combines multiple conditions:
+
+1. In the "Create Rule" section:
+   - Rule Name: "Complex Employee Eligibility"
+   - Rule Expression:
+     ```
+     ((age > 30 AND department = 'Sales') OR (age < 25 AND department = 'Marketing')) AND (salary > 50000 OR experience > 5)
+     ```
+
+2. Click "Create Rule". The system will return a rule ID, let's say it's 1.
+
+3. To evaluate this rule, in the "Evaluate Rule" section:
+   - Rule ID: 1
+   - Evaluation Data:
+     ```json
+     {
+       "age": 32,
+       "department": "Sales",
+       "salary": 55000,
+       "experience": 4
+     }
+     ```
+
+4. Click "Evaluate Rule". The result should be `true` because the employee is over 30, in Sales, and has a salary over 50000.
+
+5. Try different combinations in the evaluation data to see how the rule behaves with various inputs.
+
 Note: Ensure that the backend server is running on `http://localhost:8080` for the web interface to function correctly.
 
 
